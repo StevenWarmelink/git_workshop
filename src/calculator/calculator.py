@@ -12,6 +12,13 @@ class Calculator:
 
 	def mul(num_1, num_2):
 		return num_1 * num_2
+	
+	def pow(num_1, num_2):
+		res = num_1
+		for idx in range(num_2):
+			if idx > 0:
+				res *= num_1
+		return res
 
 if __name__ == "__main__":
 	calc = Calculator()
